@@ -1,9 +1,14 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
 body {
   font-family: Helvetica;
   font-size: 22px;
    color: seashell;
    background-color: black;
     opacity: 0.9;
+    text-align: center;
 }
 h2, 
 h4, 
@@ -31,6 +36,7 @@ h5 {
 .links{
     word-spacing: 0.3em;
     float: right;
+    margin: auto 1rem auto auto;
 }
 .link {
     font-family: Helvetica;
@@ -42,14 +48,18 @@ h5 {
     display: flex;
     height: 700px;
     position: relative;
+    margin: auto; 
+    justify-self: center;
+    padding-top: 69px;
 }
 .overlaytext {
     position: absolute;
     background: black;
-    top: 50%;
+    width: 100%;
     bottom: 50%;
     align-content: center;
     word-spacing: 0.3em;
+    z-index: 9;
 }
 .featuredtea {
     display: flex;
@@ -57,43 +67,50 @@ h5 {
     flex-direction: row;
    flex-wrap: wrap;
 }
-.figcaption {
-    align-content: center;
+figcaption {
+    text-align: center;
 }
 .TOTM {
     max-height: 200px;
     max-width: 300px;
     align-content: center;
 }
-
-.locations .locationimage {
+.locations-container{ 
+    background-image: url("./img-locations-background.jpeg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 90%;
+    display: flex;
+    margin: auto;
     justify-content: center;
-    align-items: center;
-    min-height: 500px;
-    width: 100%;
-    display: inline-flex;
-    position: relative;
-    z-index: 9;
+    flex-direction: column;
+    }
    
-}
 .locations {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    column-gap: 40px;
-    position: absolute;
+      justify-content: center;
+      flex-direction: row;
+      column-gap: 40px;
+      height: 500px;
+      padding-top: 125px;
+      
 }
 
 .locations .locationbox {
     width: 300px;
-    border-top: 15px;
-    border-left: 40px;
+    margin-top: 15px;
+    margin-bottom: auto;
     border: 1px solid seashell;
+    background-color: black;
     text-align: center;
     display: inline-flex;
     position:relative;
     flex-direction: column;
-    opacity: 1;
+    background: rgba (0, 0, 0, 0.25);
+}
+.locations p{
+    color: white;
 }
 .footer {
     height: 200px;
